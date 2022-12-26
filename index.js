@@ -18,7 +18,7 @@ app.use(cookieParser())
 app.use("/images", express.static(__dirname + "/images"));
 app.use(require('./routes/categories.route'))
 app.use(require('./routes/fighters.route'))
-mongoose.set('strictQuery', false)
+mongoose.set('strictQuery', false )
 
 app.use(require("./routes/comment.route"));
 // app.use(require("./routes/product.route"));
